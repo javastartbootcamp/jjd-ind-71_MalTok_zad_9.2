@@ -20,11 +20,6 @@ public class Truck extends Car {
     }
 
     @Override
-    public double countRange() {
-        return super.countRange();
-    }
-
-    @Override
     public double getAdditionalFuelConsumption() {
         double additionalFuelConsumption = 0;
         if (isAirConditioningOn()) {
@@ -32,16 +27,6 @@ public class Truck extends Car {
         }
         additionalFuelConsumption += loadWeight * LOAD_FUEL_CONSUMPTION / 100;
         return additionalFuelConsumption;
-    }
-
-    @Override
-    public void turnAirConditioningOn() {
-        super.turnAirConditioningOn();
-    }
-
-    @Override
-    public void turnAirConditioningOff() {
-        super.turnAirConditioningOff();
     }
 
     @Override
